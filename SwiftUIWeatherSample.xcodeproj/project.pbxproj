@@ -25,7 +25,45 @@
 		7897E32B29A8AB9C00A8F1B5 /* WeatherService+Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7897E32A29A8AB9C00A8F1B5 /* WeatherService+Api.swift */; };
 		7897E32D29A8B24300A8F1B5 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7897E32C29A8B24300A8F1B5 /* ApiError.swift */; };
 		7897E32F29AC3BD100A8F1B5 /* CodableForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7897E32E29AC3BD100A8F1B5 /* CodableForecast.swift */; };
+		7897E33129AC7D3300A8F1B5 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7897E33029AC7D3300A8F1B5 /* ErrorView.swift */; };
+		7897E33929AC81D800A8F1B5 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7897E33829AC81D800A8F1B5 /* WidgetKit.framework */; };
+		7897E33B29AC81D800A8F1B5 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7897E33A29AC81D800A8F1B5 /* SwiftUI.framework */; };
+		7897E33E29AC81D800A8F1B5 /* SwifUIWeatherSampleWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7897E33D29AC81D800A8F1B5 /* SwifUIWeatherSampleWidgetBundle.swift */; };
+		7897E34029AC81D800A8F1B5 /* SwifUIWeatherSampleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7897E33F29AC81D800A8F1B5 /* SwifUIWeatherSampleWidget.swift */; };
+		7897E34229AC81DA00A8F1B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7897E34129AC81DA00A8F1B5 /* Assets.xcassets */; };
+		7897E34629AC81DA00A8F1B5 /* SwifUIWeatherSampleWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7897E33629AC81D800A8F1B5 /* SwifUIWeatherSampleWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7897E34C29AC823400A8F1B5 /* WidgetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7897E34B29AC823400A8F1B5 /* WidgetData.swift */; };
+		7897E34D29AC823900A8F1B5 /* WidgetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7897E34B29AC823400A8F1B5 /* WidgetData.swift */; };
+		7897E34E29AC82AA00A8F1B5 /* Double+TemperatureString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7897E31429A5FC3400A8F1B5 /* Double+TemperatureString.swift */; };
+		7897E34F29AC82AA00A8F1B5 /* String+WeatherSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7897E32529A8A6E500A8F1B5 /* String+WeatherSymbol.swift */; };
+		7897E35329AC832600A8F1B5 /* WeatherEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7897E35129AC831F00A8F1B5 /* WeatherEntry.swift */; };
+		7897E35529AC838D00A8F1B5 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7897E35429AC838D00A8F1B5 /* Provider.swift */; };
+		7897E35829AC849C00A8F1B5 /* WeatherEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7897E35729AC849C00A8F1B5 /* WeatherEntryView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7897E34429AC81DA00A8F1B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7897E2F329A5F00700A8F1B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7897E33529AC81D800A8F1B5;
+			remoteInfo = SwifUIWeatherSampleWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7897E34A29AC81DA00A8F1B5 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7897E34629AC81DA00A8F1B5 /* SwifUIWeatherSampleWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7897E2FB29A5F00700A8F1B5 /* SwiftUIWeatherSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIWeatherSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +86,18 @@
 		7897E32A29A8AB9C00A8F1B5 /* WeatherService+Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherService+Api.swift"; sourceTree = "<group>"; };
 		7897E32C29A8B24300A8F1B5 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		7897E32E29AC3BD100A8F1B5 /* CodableForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableForecast.swift; sourceTree = "<group>"; };
+		7897E33029AC7D3300A8F1B5 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		7897E33629AC81D800A8F1B5 /* SwifUIWeatherSampleWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SwifUIWeatherSampleWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7897E33829AC81D800A8F1B5 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		7897E33A29AC81D800A8F1B5 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		7897E33D29AC81D800A8F1B5 /* SwifUIWeatherSampleWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifUIWeatherSampleWidgetBundle.swift; sourceTree = "<group>"; };
+		7897E33F29AC81D800A8F1B5 /* SwifUIWeatherSampleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifUIWeatherSampleWidget.swift; sourceTree = "<group>"; };
+		7897E34129AC81DA00A8F1B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7897E34329AC81DA00A8F1B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7897E34B29AC823400A8F1B5 /* WidgetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetData.swift; sourceTree = "<group>"; };
+		7897E35129AC831F00A8F1B5 /* WeatherEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEntry.swift; sourceTree = "<group>"; };
+		7897E35429AC838D00A8F1B5 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		7897E35729AC849C00A8F1B5 /* WeatherEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEntryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +108,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7897E33329AC81D800A8F1B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7897E33B29AC81D800A8F1B5 /* SwiftUI.framework in Frameworks */,
+				7897E33929AC81D800A8F1B5 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				7897E2FD29A5F00700A8F1B5 /* SwiftUIWeatherSample */,
+				7897E33C29AC81D800A8F1B5 /* SwifUIWeatherSampleWidget */,
+				7897E33729AC81D800A8F1B5 /* Frameworks */,
 				7897E2FC29A5F00700A8F1B5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				7897E2FB29A5F00700A8F1B5 /* SwiftUIWeatherSample.app */,
+				7897E33629AC81D800A8F1B5 /* SwifUIWeatherSampleWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +199,7 @@
 				7897E31A29A84CEF00A8F1B5 /* WeatherContentView.swift */,
 				7897E31C29A84D5600A8F1B5 /* CurrentWeatherView.swift */,
 				7897E31E29A84D9F00A8F1B5 /* ForecastView.swift */,
+				7897E33029AC7D3300A8F1B5 /* ErrorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -147,8 +210,48 @@
 				7897E32829A8AA6600A8F1B5 /* CodableCurrentWeather.swift */,
 				7897E32C29A8B24300A8F1B5 /* ApiError.swift */,
 				7897E32E29AC3BD100A8F1B5 /* CodableForecast.swift */,
+				7897E34B29AC823400A8F1B5 /* WidgetData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7897E33729AC81D800A8F1B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7897E33829AC81D800A8F1B5 /* WidgetKit.framework */,
+				7897E33A29AC81D800A8F1B5 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7897E33C29AC81D800A8F1B5 /* SwifUIWeatherSampleWidget */ = {
+			isa = PBXGroup;
+			children = (
+				7897E35629AC848100A8F1B5 /* View */,
+				7897E35029AC830F00A8F1B5 /* Model */,
+				7897E33D29AC81D800A8F1B5 /* SwifUIWeatherSampleWidgetBundle.swift */,
+				7897E33F29AC81D800A8F1B5 /* SwifUIWeatherSampleWidget.swift */,
+				7897E35429AC838D00A8F1B5 /* Provider.swift */,
+				7897E34129AC81DA00A8F1B5 /* Assets.xcassets */,
+				7897E34329AC81DA00A8F1B5 /* Info.plist */,
+			);
+			path = SwifUIWeatherSampleWidget;
+			sourceTree = "<group>";
+		};
+		7897E35029AC830F00A8F1B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7897E35129AC831F00A8F1B5 /* WeatherEntry.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7897E35629AC848100A8F1B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7897E35729AC849C00A8F1B5 /* WeatherEntryView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,15 +264,34 @@
 				7897E2F729A5F00700A8F1B5 /* Sources */,
 				7897E2F829A5F00700A8F1B5 /* Frameworks */,
 				7897E2F929A5F00700A8F1B5 /* Resources */,
+				7897E34A29AC81DA00A8F1B5 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7897E34529AC81DA00A8F1B5 /* PBXTargetDependency */,
 			);
 			name = SwiftUIWeatherSample;
 			productName = SwiftUIWeatherSample;
 			productReference = 7897E2FB29A5F00700A8F1B5 /* SwiftUIWeatherSample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		7897E33529AC81D800A8F1B5 /* SwifUIWeatherSampleWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7897E34729AC81DA00A8F1B5 /* Build configuration list for PBXNativeTarget "SwifUIWeatherSampleWidgetExtension" */;
+			buildPhases = (
+				7897E33229AC81D800A8F1B5 /* Sources */,
+				7897E33329AC81D800A8F1B5 /* Frameworks */,
+				7897E33429AC81D800A8F1B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwifUIWeatherSampleWidgetExtension;
+			productName = SwifUIWeatherSampleWidgetExtension;
+			productReference = 7897E33629AC81D800A8F1B5 /* SwifUIWeatherSampleWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -182,6 +304,9 @@
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					7897E2FA29A5F00700A8F1B5 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					7897E33529AC81D800A8F1B5 = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
@@ -200,6 +325,7 @@
 			projectRoot = "";
 			targets = (
 				7897E2FA29A5F00700A8F1B5 /* SwiftUIWeatherSample */,
+				7897E33529AC81D800A8F1B5 /* SwifUIWeatherSampleWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -214,6 +340,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7897E33429AC81D800A8F1B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7897E34229AC81DA00A8F1B5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -222,9 +356,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7897E32129A8842E00A8F1B5 /* WeatherService.swift in Sources */,
+				7897E34C29AC823400A8F1B5 /* WidgetData.swift in Sources */,
 				7897E32F29AC3BD100A8F1B5 /* CodableForecast.swift in Sources */,
 				7897E32929A8AA6600A8F1B5 /* CodableCurrentWeather.swift in Sources */,
 				7897E32629A8A6E500A8F1B5 /* String+WeatherSymbol.swift in Sources */,
+				7897E33129AC7D3300A8F1B5 /* ErrorView.swift in Sources */,
 				7897E31B29A84CEF00A8F1B5 /* WeatherContentView.swift in Sources */,
 				7897E31D29A84D5600A8F1B5 /* CurrentWeatherView.swift in Sources */,
 				7897E31929A84C6A00A8F1B5 /* BackgroundView.swift in Sources */,
@@ -240,7 +376,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7897E33229AC81D800A8F1B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7897E34E29AC82AA00A8F1B5 /* Double+TemperatureString.swift in Sources */,
+				7897E33E29AC81D800A8F1B5 /* SwifUIWeatherSampleWidgetBundle.swift in Sources */,
+				7897E35529AC838D00A8F1B5 /* Provider.swift in Sources */,
+				7897E34F29AC82AA00A8F1B5 /* String+WeatherSymbol.swift in Sources */,
+				7897E34D29AC823900A8F1B5 /* WidgetData.swift in Sources */,
+				7897E34029AC81D800A8F1B5 /* SwifUIWeatherSampleWidget.swift in Sources */,
+				7897E35829AC849C00A8F1B5 /* WeatherEntryView.swift in Sources */,
+				7897E35329AC832600A8F1B5 /* WeatherEntry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7897E34529AC81DA00A8F1B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7897E33529AC81D800A8F1B5 /* SwifUIWeatherSampleWidgetExtension */;
+			targetProxy = 7897E34429AC81DA00A8F1B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		7897E30729A5F00900A8F1B5 /* Debug */ = {
@@ -360,6 +519,7 @@
 		7897E30A29A5F00900A8F1B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -368,7 +528,7 @@
 				DEVELOPMENT_TEAM = 7L3BA7B54Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "오늘날씨";
+				INFOPLIST_KEY_CFBundleDisplayName = "지민이날씨";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현재위치정보에서 날씨정보를 요청합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -395,6 +555,7 @@
 		7897E30B29A5F00900A8F1B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -403,7 +564,7 @@
 				DEVELOPMENT_TEAM = 7L3BA7B54Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "오늘날씨";
+				INFOPLIST_KEY_CFBundleDisplayName = "지민이날씨";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현재위치정보에서 날씨정보를 요청합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -427,6 +588,60 @@
 			};
 			name = Release;
 		};
+		7897E34829AC81DA00A8F1B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7L3BA7B54Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwifUIWeatherSampleWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SwifUIWeatherSampleWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dy.SwiftUIWeatherSample.SwifUIWeatherSampleWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7897E34929AC81DA00A8F1B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7L3BA7B54Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwifUIWeatherSampleWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SwifUIWeatherSampleWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dy.SwiftUIWeatherSample.SwifUIWeatherSampleWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -444,6 +659,15 @@
 			buildConfigurations = (
 				7897E30A29A5F00900A8F1B5 /* Debug */,
 				7897E30B29A5F00900A8F1B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7897E34729AC81DA00A8F1B5 /* Build configuration list for PBXNativeTarget "SwifUIWeatherSampleWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7897E34829AC81DA00A8F1B5 /* Debug */,
+				7897E34929AC81DA00A8F1B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
