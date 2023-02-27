@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ForecastView: View {
+    @EnvironmentObject var service: WeatherService
     var body: some View {
         ForEach(Forecast.preview) { forecast in
             HStack {
@@ -20,6 +21,7 @@ struct ForecastView: View {
                 Spacer()
                 
                 Image(systemName: forecast.icon)
+                    .symbolRenderingMode(.multicolor)
                     .font(.title3)
                 
                 Text(forecast.weather)
@@ -44,5 +46,6 @@ struct ForecastView_Previews: PreviewProvider {
             ForecastView()
         }
         .preferredColorScheme(.dark)
+        .environmentObject(WeatherService.preview)
     }
 }

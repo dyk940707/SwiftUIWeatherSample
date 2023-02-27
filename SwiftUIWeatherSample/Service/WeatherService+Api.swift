@@ -20,6 +20,12 @@ extension WeatherService {
             let fetchedCurrentWeather: CodableCurrentWeather = try await fetch(type: .weather, location: location)
             currentWeather = CurrentWeather(data: fetchedCurrentWeather)
             print(currentWeather)
+            
+            let fetchedForecast: CodableForecast = try await fetch(type: .forecast, location: location)
+            print(fetchedForecast)
+            forecastList = fetchedForecast.list.compactMap {
+                Forecast(data: $0)
+            }
         } catch {
             lastError = "Api 요청 실패"
         }
