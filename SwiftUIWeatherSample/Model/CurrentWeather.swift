@@ -33,7 +33,12 @@ extension CurrentWeather {
         guard let weatherInfo = data.weather.first else { return nil }
         
         icon = weatherInfo.icon.weatherImageName
-        weather = weatherInfo.description
+        switch weatherInfo.description {
+        case "튼구름", "온흐림":
+            weather = "흐림"
+        default:
+            weather = weatherInfo.description
+        }
         temperature = data.main.temp.temperatureString
         maxTemperature = data.main.temp_max.temperatureString
         minTemperature = data.main.temp_min.temperatureString

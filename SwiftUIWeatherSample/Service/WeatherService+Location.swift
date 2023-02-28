@@ -39,7 +39,6 @@ extension WeatherService: CLLocationManagerDelegate {
             updating = false
         }
     }
-    
     private func process(location: CLLocation) {
         guard !isPreviewService else { return }
         

@@ -45,7 +45,13 @@ extension Forecast {
         guard let weatherData = data.weather.first else { return nil }
         
         icon = weatherData.icon.weatherImageName
-        weather = weatherData.description
+        
+        switch weatherData.description {
+        case "튼구름", "온흐림":
+            weather = "흐림"
+        default:
+            weather = weatherData.description
+        }
         
         temperature = data.main.temp.temperatureString
         minTemperature = data.main.temp_min.temperatureString
